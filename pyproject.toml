@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "trip_planner_assistant"
+version = "0.1.0"
+description = "Trip Planner Assistant using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+langchain_google_genai = "1.0.10"
+
+[tool.poetry.scripts]
+trip_planner_assistant = "trip_planner_assistant.main:run"
+run_crew = "trip_planner_assistant.main:run"
+train = "trip_planner_assistant.main:train"
+replay = "trip_planner_assistant.main:replay"
+test = "trip_planner_assistant.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
