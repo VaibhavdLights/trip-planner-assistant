@@ -62,4 +62,5 @@ class TripPlannerAssistantCrew():
 			tasks=self.tasks,
 			process=Process.sequential,
 			verbose=True,
+			max_rpm=15,
 		)
